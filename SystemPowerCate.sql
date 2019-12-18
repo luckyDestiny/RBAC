@@ -1,0 +1,27 @@
+USE RBAC
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[SystemPowerCate](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[SystemPowerCateName] [nvarchar](20) NOT NULL,
+	[SystemPowerCateIndex] [int] NOT NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[SystemPowerCate] ADD  DEFAULT ('') FOR [SystemPowerCateName]
+GO
+
+ALTER TABLE [dbo].[SystemPowerCate] ADD  DEFAULT ((0)) FOR [SystemPowerCateIndex]
+GO
+
+
