@@ -1,0 +1,18 @@
+USE [RBAC]
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+ALTER PROCEDURE [dbo].[usp_GetUsersByOrgID]
+	@OrgID INT
+AS
+BEGIN
+	 SET NOCOUNT ON;
+	
+	 SELECT [ID],[UserName] FROM [dbo].[User] WHERE [OrgID] = @OrgID
+	 
+END
