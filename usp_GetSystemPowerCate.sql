@@ -7,7 +7,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-ALTER PROCEDURE [dbo].[usp_GetSystemPowerCate]
+CREATE PROCEDURE [dbo].[usp_GetSystemPowerCate]
 
 AS
 BEGIN

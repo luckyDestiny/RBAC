@@ -5,7 +5,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[usp_CheckPowerList]
+CREATE PROCEDURE [dbo].[usp_CheckPowerList]
 	@UserID INT=0,
 	@PageUrls NVARCHAR(500)='',
 	@FunctionIndexs VARCHAR(100)='',

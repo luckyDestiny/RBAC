@@ -5,7 +5,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER PROC [dbo].[usp_GetModuleMenu]
+CREATE PROC [dbo].[usp_GetModuleMenu]
 (
 	@UserID INT,
 	@ModuleCateID INT

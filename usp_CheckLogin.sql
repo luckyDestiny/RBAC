@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[usp_CheckLogin]
+CREATE PROCEDURE [dbo].[usp_CheckLogin]
 	@LoginName NVARCHAR(50),
 	@LoginPassword NVARCHAR(100), 
 	@FunctionIndex INT=0,

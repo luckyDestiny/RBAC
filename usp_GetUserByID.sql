@@ -7,7 +7,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-ALTER PROCEDURE [dbo].[usp_GetUserByID]
+CREATE PROCEDURE [dbo].[usp_GetUserByID]
 	@ID int
 AS
 BEGIN

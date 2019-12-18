@@ -6,7 +6,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[usp_CheckPower]
+CREATE PROCEDURE [dbo].[usp_CheckPower]
 	@UserID INT=0,
 	@PageUrl NVARCHAR(200)='',
 	@FunctionIndex INT=0,
